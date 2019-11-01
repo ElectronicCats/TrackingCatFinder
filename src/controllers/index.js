@@ -40,8 +40,10 @@ ctrl.index = async (req, res) => {
     objJson += '"FILTER": "ON" } ]}';
     return objJson;
     }
-    
-  res.render("index", { title: "example - cat finder", message: "example", data: JsonOnSring(data) });
+    let parseData = {
+      data: JsonOnSring(data)
+    };
+  res.render("index", { title: "example - cat finder", message: "example", data: parseData });
 };
 
 module.exports = ctrl;
