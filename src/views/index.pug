@@ -3,3 +3,14 @@ html
     title= title
   body
     h1= message
+    h2= data
+    script.
+      parserData();
+      function parserData(){
+        const element = document.querySelector('h2');
+        console.log(element.innerText);
+        let a = "<head><meta http-equiv='refresh' content='3'/></head>10,15,30,25<div>";
+        let b = element.innerText.substring(58, element.innerText.length - 5 );
+        console.log(b)
+      }
+
