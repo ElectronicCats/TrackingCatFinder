@@ -49,7 +49,7 @@ float mz = 0;
 
 public void setup() 
 {
-  size(1000,600);// creamos ventana de 700 por 400 pixeles
+  size(700,400);// creamos ventana de 700 por 400 pixeles
   smooth();
   
   cp5 = new ControlP5(this);
@@ -73,7 +73,7 @@ public void setup()
               ;
              
      cp5 = new ControlP5(this);
-     perilladeBarometro = cp5.addKnob ("Presión")
+     perilladeBarometro = cp5.addKnob ("Presion")
               .setRange(800, 850)
               .setValue(0)
               .setPosition(coordenadaX01,280)
@@ -110,8 +110,8 @@ void draw() {
   
   //println("Reponse Content-Length Header: " + get.getHeader("Content-Length"));
   String data = get.getContent();
-  if (data != null ) {
-    String ss  = data.substring(58,data.length()-6);
+  String ss  = data.substring(58,data.length()-6);
+  if (ss != null ) {
     String[] list = split(ss, ',');
     
     hum = float(list[0]);
