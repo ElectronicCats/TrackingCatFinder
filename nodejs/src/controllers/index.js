@@ -7,11 +7,22 @@ ctrl.index = async (req, res) => {
     .get("http://192.168.4.1/data")
     .then(result => {
       console.log(result.data);
-      let data = result.data.substring(58, result.data.length - 6 );
+      const data = result.data.substring(58, result.data.length - 6 );
+      const json = JSON.parse(JsonOnSring(data))
       res.render("index", {
         title: "example - cat finder",
         message: "Tracking Cat Finder",
-        data: JsonOnSring(data)
+        humidity: json['Sensores'][0][1],
+        pressure: json['Sensores'][0][2],
+        temp: json['Sensores'][0][3], // C~
+        co2: json['Sensores'][0][4],
+        tvoc: json['Sensores'][0][5],
+        ax: json['Sensores'][0][6], //Acelerometro
+        ay: json['Sensores'][0][7],
+        az: json['Sensores'][0][8],
+        gx: json['Sensores'][0][9], //Giroscopio
+        gy: json['Sensores'][0][10],
+        gz: json['Sensores'][0][11],
       });
     })
     .catch(err => {
