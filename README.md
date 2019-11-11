@@ -1,13 +1,11 @@
 # TrackingCatFinder
 
-Este es un sistema basado en nodejs utilizado para el seguimiento en estación terrena del Cat Finder en tiempo real por medio de comunicación WiFi.
+En este repositorio encontraras una serie de ejemplos en varios lenguajes de programacion utilizados para el seguimiento en estación terrena del Cat Finder en tiempo real por medio de comunicación WiFi.
 
-## Instalacion normal (MacOS y Linux)
+## Ejemplos
 
-- Instalar Node.js 11.10.0
-- Clonar`https://github.com/ElectronicCats/TrackingCatSatI` a TrackingCatSatI folder 
-- ir a TrackingCatFinder, abrir terminal y ejecutar
-- `npm install`
+- nodejs: Ejemplo en javascript con nodejs.
+- Processing: Ejemplo basado en el lenguaje de programacion processing.
 
 # License
 
