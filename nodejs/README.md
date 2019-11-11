@@ -8,6 +8,7 @@ Este es un sistema basado en nodejs utilizado para el seguimiento en estación t
 - Clonar`https://github.com/ElectronicCats/TrackingCatSatI` a TrackingCatSatI folder 
 - ir a TrackingCatFinder, abrir terminal y ejecutar
 - `npm install`
+- `npm run start`
 
 # License
 
