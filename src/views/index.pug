@@ -4,13 +4,5 @@ html
   body
     h1= message
     h2(class="hide-data")= data
-    script.
-      parserData();
-      function parserData(){
-        const element = document.querySelector('h2');
-        console.log(element.innerText);
-        const data = element.innerText.substring(58, element.innerText.length - 6 );
-        console.log(data);
-        return data
-      }
+    
 
