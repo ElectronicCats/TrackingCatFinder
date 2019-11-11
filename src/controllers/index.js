@@ -7,10 +7,11 @@ ctrl.index = async (req, res) => {
     .get("http://192.168.4.1/data")
     .then(result => {
       console.log(result.data);
+      let data = result.data.substring(58, result.data.length - 6 );
       res.render("index", {
         title: "example - cat finder",
         message: "Tracking Cat Finder",
-        data: result.data
+        data: JsonOnSring(data)
       });
     })
     .catch(err => {
