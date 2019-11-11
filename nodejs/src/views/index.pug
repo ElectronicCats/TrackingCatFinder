@@ -1,8 +1,60 @@
+<!--
+/************************************************************
+  Tracking Cat Finder 1.0.0
+  Cat Finder - Rover Educativo
+  Oscar Eduardo Raygoza @Electronic Cats
+  Original Creation Date: Nov 10, 2019
+  https://github.com/ElectronicCats/Cat_Finder
+  Este ejemplos demuestra como recibir los datos de los sensores y funcionalidad
+  basica del Cat Finder Kit de Rover Educativo
+  http://electroniccats.com
+  Este código es beerware si tu me ves ( o cualquier otro miembro de Electronic Cats)
+  a nivel local, y tu has encontrado nuestro código útil ,
+  por favor comprar una ronda de cervezas!
+  Distribuido como; no se da ninguna garantía.
+************************************************************/ -->
 html
   head
     title= title
+    meta(http-equiv='refresh' content='5')
   body
     h1= message
     h2(class="hide-data")= data
-    
-
+    table(style='width:100%' border='1')
+      tr
+        th Dato
+        th Result
+      tr
+        td humidity
+        td= humidity
+      tr
+        td pressure
+        td= pressure
+      tr
+        td temp
+        td= temp
+      tr
+        td co2
+        td= co2
+      tr
+        td tvoc
+        td= tvoc
+      tr
+        td ax
+        td= ax
+      tr
+        td ay
+        td= ay
+      tr
+        td az
+        td= az
+      tr
+        td= gx
+        td= gx
+      tr
+        td gy
+        td= gy
+      tr
+        td gz
+        td= gz
+      tr  
