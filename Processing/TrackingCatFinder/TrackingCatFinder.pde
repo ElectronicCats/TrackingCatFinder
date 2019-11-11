@@ -152,7 +152,6 @@ void draw() {
     println("giroscopio y: " + my);
     mz= int(list[13]);
     println("giroscopio z: " + mz);
-    */
   }
   
 }
