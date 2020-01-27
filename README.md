@@ -4,6 +4,7 @@ En este repositorio encontraras una serie de ejemplos en varios lenguajes de pro
 
 ## Ejemplos
 
+- nodejs + view engine: Ejemplo en javascript con nodejs y pug como motor de vista.
 - nodejs: Ejemplo en javascript con nodejs.
 - Processing: Ejemplo basado en el lenguaje de programacion processing.
 
