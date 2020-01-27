@@ -1,0 +1,16 @@
+:root { 
+    --primary: #F2F2F2;
+    --secundary: #e4a00f;
+    --font-primary: "Arial";
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+    color: var(--secundary);
+    font-family: var(--font-primary);
+}
+h1{
+    text-align: center;
+}
